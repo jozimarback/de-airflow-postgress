@@ -15,3 +15,9 @@ Run docker compose with the following command:
     - flower [http://localhost:5555]
 - Spark
     - master [http://localhost:9080]
+
+#### Access
+
+Airflow:
+user: airflow
+pass: airflow

@@ -1,0 +1,1 @@
+url_origination = "https://github.com/ScudraServicos/data-engineer-code-challenge/blob/main/originations.zip"
