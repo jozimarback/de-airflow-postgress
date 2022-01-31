@@ -18,5 +18,7 @@ def unzipfile(path_to_zip_file:str, directory_to_extract_to:str):
     # with zipfile.ZipFile(path_to_zip_file, 'r') as zip_ref:
     #     zip_ref.extractall(directory_to_extract_to)
 
-unzipfile("https://github.com/ScudraServicos/data-engineer-code-challenge/raw/main/payments.zip",
-            "./dags/data/")
+# unzipfile("https://github.com/ScudraServicos/data-engineer-code-challenge/raw/main/payments.zip",
+            # "./dags/data/")
+unzipfile("https://github.com/ScudraServicos/data-engineer-code-challenge/raw/main/originations.zip",
+"./dags/data/")
