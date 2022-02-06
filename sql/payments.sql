@@ -1,9 +1,14 @@
 CREATE TABLE IF NOT EXISTS public.payments
 (
-    "paymentId" character varying(100) COLLATE pg_catalog."default" NOT NULL,
-    "installmentId" character varying(100) COLLATE pg_catalog."default" NOT NULL,
-    "paymentDate" date NOT NULL,
-    "paymentValue" real NOT NULL DEFAULT 0
+    "installmentId" text COLLATE pg_catalog."default",
+    "paymentDate" timestamp without time zone,
+    "paymentId" text COLLATE pg_catalog."default",
+    "paymentValue" double precision,
+    CONSTRAINT fk_installment FOREIGN KEY ("installmentId")
+        REFERENCES public.installments ("installmentId") MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE NO ACTION
+        NOT VALID
 )
 
 TABLESPACE pg_default;
